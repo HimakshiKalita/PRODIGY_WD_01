@@ -1,0 +1,321 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+}
+
+body {
+    width: 100%;
+    background-color: aliceblue;
+    margin: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #ad7c95;
+    border: #ad7c95;
+    z-index: 1000;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bolder;
+    margin-left: 11%;
+    transition: 0.3s ease;
+    font-family: "segoe script";
+}
+
+.logo span {
+    color: #f6fa2a;
+    font-family: "segoe script";
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav_ul {
+    display: flex;
+    text-decoration: none;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav_li {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    list-style: none;
+}
+
+.nav_li:hover {
+    color: #f6fa2a;
+}
+
+.home_image {
+    display: flex;
+    align-items: center;
+    background: url(images/food-photography.webp) no-repeat  ;
+    min-height: 100vh;
+    width: 100%;
+    background-size:cover;
+   
+}
+
+.content {
+    max-width: 50rem;
+    margin-left: 7%;
+}
+
+.content h5 {
+    font-size: 15px;
+    color: #cc2079;
+    margin-left: 7%;
+}
+
+.content span {
+    font-size: 3rem;
+    padding: 1rem 0;
+    line-height: 1.5;
+    margin-left: 7%;
+    color: white;
+}
+
+.content p {
+    font-size: 1rem;
+    color: whitesmoke;
+    padding: 1rem 0;
+    line-height: 1.5;
+    margin-left: 7%;
+}
+
+.content a {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 8rem;
+    background: #ad3a76;
+    color: black;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-left: 7%;
+    text-decoration: none;
+}
+
+.content a:hover {
+    background-color: #ad3a7596;
+    transform: scale(1.09);
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.about_image {
+    flex-shrink: 0;
+}
+
+.about_image img {
+    width: 330px;
+    height: 410px;
+    object-fit: contain;
+}
+
+.content2 {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.para2 {
+    font-size: 1.5rem;
+    color: #797171;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.head2 {
+    color: rgb(22, 21, 21);
+}
+
+.btn2 {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 8rem;
+    background: rgba(60, 78, 182, 0.925);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin-left: 35%;
+}
+
+.btn2:hover {
+    background-color:rgba(60, 78, 182, 0.637) ;
+    transform: scale(1.09);
+}
+
+.bgColor {
+    transition: 1s;
+    background: rgb(196, 185, 235);
+    color: black;
+    scroll-behavior: smooth;
+}
+
+.navbar #toggler {
+    display: none;
+}
+
+.navbar .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        font-size: 1.8rem;
+        margin-left: 2%;
+    }
+
+    .nav_ul {
+        display: none;
+    }
+
+    .navbar .fa-bars {
+        display: block;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .content h5 {
+        font-size: 1.3rem;
+    }
+
+    .content span {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+
+    .content a {
+        padding: 0.8rem 0.8rem;
+        font-size: 1.2rem;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about_image img {
+        width: 250px;
+        height: 310px;
+    }
+
+    .content2 {
+        padding: 10px;
+    }
+    
+    .para2 {
+        font-size: 1.2rem;
+    }
+
+    .head2 {
+        font-size: 1.1rem;
+    }
+}
+
+    .btn2 {
+        margin-left: 0;
+        width: 15%;
+        text-align: center;
+    }
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .home_image {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .content h5 {
+        font-size: 0.8rem;
+    }
+
+    .content span {
+        font-size: 1.3rem;
+    }
+
+    .content p {
+        font-size: 0.8rem;
+    }
+
+    .content a {
+        padding: 0.5rem 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .about_image img {
+        width: 200px;
+        height: 260px;
+    }
+
+    .para2 {
+        font-size: 0.7rem;
+    }
+
+    .head2 {
+        font-size: 0.8rem;
+    }
+}
+
+#toggler:checked ~ .nav_ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background-color: #ad7c95fa;
+}
+
+.nav_ul a {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
